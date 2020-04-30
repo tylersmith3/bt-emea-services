@@ -3,7 +3,7 @@ solsticePassword = prompt('Enter Solstice admin password, please.');
 async function onlineStatus(ip) {
     
     try{
-        const response = await fetch(`http://${ip}/api/config/m_displayInformation?password=${solsticePassword}`);
+        const response = await fetch(`https://${ip}/api/config/m_displayInformation?password=${solsticePassword}`);
         const data = await response.json();
         const reportedIP = data.m_displayInformation.m_ipv4;
         const reportedName = data.m_displayInformation.m_displayName;
@@ -22,6 +22,7 @@ onlineStatus('10.24.11.62');
 onlineStatus('10.152.75.22');
 onlineStatus('10.152.75.23');
 
+/*
 async function vSZ() {
 
     const ipOfVSZ = '100.124.25.30';
@@ -33,8 +34,9 @@ async function vSZ() {
 
     
     // Log on
+    // Will not work for now.
     const logInURI = `${apiURI}/v9_0/serviceTicket`;
-    const credentials = { "username": "tlead", "password": "XzRr#TB0@" }
+    const credentials = { "username": "tlead", "password": "" }
 
     const logIn = await fetch(logInURI, {
         method: 'POST',
@@ -50,3 +52,4 @@ async function vSZ() {
 }
 
 vSZ();
+*/
