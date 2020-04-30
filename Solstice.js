@@ -23,7 +23,6 @@ onlineStatus('10.24.11.62');
 onlineStatus('10.152.75.22');
 onlineStatus('10.152.75.23');
 
-/*
 async function vSZ() {
 
     const ipOfVSZ = '100.124.25.30';
@@ -52,4 +51,3 @@ async function vSZ() {
 }
 
 vSZ();
-*/
